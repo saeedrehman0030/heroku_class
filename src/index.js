@@ -8,7 +8,6 @@ class App extends React.Component {
         this.state = {students: []}
     }
 
-//Showed Database
 componentWillMount() {
 
             fetch('http://localhost:3000/students/')
@@ -17,7 +16,6 @@ componentWillMount() {
                 .catch(err => { console.log(err) })
 
                 console.log(this.state.students);
-                console.log("Test here.");
     } 
 
     render() {
